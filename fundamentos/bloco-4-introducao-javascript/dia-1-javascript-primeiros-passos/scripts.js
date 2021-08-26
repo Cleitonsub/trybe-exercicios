@@ -72,3 +72,4 @@ if (nota >= 90) {
 } else {
     console.log("Erro")
 }
+
