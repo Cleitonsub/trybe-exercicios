@@ -1,6 +1,8 @@
 const a = 10;
 const b = 15;
 const c = 20;
+const d = "bishop"
+let e = "BiShOp"
 
 
 console.log(a + b)
@@ -33,3 +35,21 @@ if (a > 0) {
 } else {
     console.log("zero")
 }
+
+
+if (a + b + c == 180) {
+    console.log("true")
+} else if (a + b + c > 0) {
+    console.log("false")
+} else {
+    console.log("Números inválidos")
+}
+
+
+if (d === e.toLowerCase()) {
+    console.log("diagonals")
+} else {
+    console.log("Peça inválida")
+}
+
+
