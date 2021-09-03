@@ -64,14 +64,16 @@
         document.getElementsByTagName('h1')[0].innerText = 'Exercício 5.1 - JavaScript'
         
         let tagP = document.getElementsByTagName('p');
-
         for (let i = 0; i < tagP.length; i += 1) {
-
             console.log(document.getElementsByTagName('p')[i].style.textTransform = 'uppercase');
-            
         }
-       
-
+        
+        function allTagsP() {
+            for (let i = 0; i < tagP.length; i += 1) {
+            console.log(document.getElementsByTagName('p')[i].innerText)
+            }
+        }
+        
     </script>
   </body>
 </html>
