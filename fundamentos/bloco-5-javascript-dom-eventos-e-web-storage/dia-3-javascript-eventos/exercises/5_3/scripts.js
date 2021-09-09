@@ -23,11 +23,32 @@ function createDaysOfCalendar() {
   const ulDayList = document.querySelector('#days');
 
   for (let index = 0; index < dezDaysList.length; index += 1) {
-    const days = dezDaysList[index];
-    const daysListItem = document.createElement('li');
+    let days = dezDaysList[index];
+    let daysListItem = document.createElement('li');
+    daysListItem.classList.add("day");
     daysListItem.innerHTML = days;
-
     ulDayList.appendChild(daysListItem);
+    if (days === 24) {
+      daysListItem.classList.add("holiday");
+    }
+    if (days === 25) {
+      daysListItem.classList.add("holiday");
+    }
+    if (days === 31) {
+      daysListItem.classList.add("holiday");
+    }
+    if (days === 4) {
+      daysListItem.classList.add("friday");
+    }
+    if (days === 11) {
+      daysListItem.classList.add("friday");
+    }
+    if (days === 18) {
+      daysListItem.classList.add("friday");
+    }
+    if (days === 25) {
+      daysListItem.classList.add("friday");
+    }
   };
 };
 
