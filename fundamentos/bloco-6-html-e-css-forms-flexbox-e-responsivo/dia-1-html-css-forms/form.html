@@ -57,18 +57,34 @@
                     <option value="SE">Sergipe</option>
                     <option value="TO">Tocantins</option>
                 </select>
-                
+
                     <input type="radio" id="tipo-casa1" name="casa">
                     <label for="tipo-casa1">Casa</label>
 
                     <input type="radio" id="tipo-casa2" name="casa">
                     <label for="tipo-casa2">Apartamento</label>
 
+                    <button type="reset">Apagar dados pessoais</button>
+            </fieldset>
+<br>
+            <fieldset>
+                <legend>Dados do seu último emprego</legend>
+                <textarea name="res-curriculo" id="res-curriculo" cols="65" rows="16" maxlength="1000" required></textarea>
 
-                
+                <label for="cargo">Cargo</label>
+                <input type="text" name="cargo" id="cargo" placeholder="Cargo" maxlength="40">
+
+                <label for="des-cargo">Descrição do cargo</label>
+                <input type="text" name="des-cargo" id="des-cargo" placeholder="Descrição do cargo" maxlength="500" required>
+
+                <label for="data-inicio">Data de início</label>
+                <input type="date" id="data-inicio" max="2099" required>
+
+
 
 
             </fieldset>
+
         </div>
 
     </form>
