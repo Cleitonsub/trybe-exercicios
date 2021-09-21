@@ -1,0 +1,47 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+    background-color: rgb(248, 248, 248);
+    color: rgb(7, 7, 7);
+}
+
+header p {
+    text-align: center;
+}
+
+.aside-one ul {
+    list-style: none;
+}
+
+.aside-two ul {
+    list-style: none;
+}
+
+@media screen and (max-width: 450px) {
+    body {
+        margin: 2% 5%;
+    }
+    
+    header ul {
+        display: flex;
+        list-style: none;
+    }
+
+    li {
+        margin-right: 25px;
+        margin: 0 1%;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+
+
+}
