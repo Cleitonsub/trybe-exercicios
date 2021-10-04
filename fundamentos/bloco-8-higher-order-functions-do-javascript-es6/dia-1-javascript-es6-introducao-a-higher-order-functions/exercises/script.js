@@ -9,11 +9,11 @@ const peopleID = (completeName, email) => {
     return obj;
 }
 
-const newEmployees = (func1, name1, email1, name2, email2, name3, email3) => {
+const newEmployees = (funcObj, name1, email1, name2, email2, name3, email3) => {
     const employees = {
-      id1: func1(name1, email1), // Nome: Pedro Guerra -> Chame sua função passando o nome Pedro Guerra como parâmetro, substituindo as aspas
-      id2: func1(name2, email2), // Nome: Luiza Drumond -> Chame sua função passando o nome Luiza Drumond como parâmetro, substituindo as aspas
-      id3: func1(name3, email3) // Nome: Carla Paiva -> Chame sua função passando o nome Carla Paiva como parâmetro, substituindo as aspas
+      id1: funcObj(name1, email1), // Nome: Pedro Guerra -> Chame sua função passando o nome Pedro Guerra como parâmetro, substituindo as aspas
+      id2: funcObj(name2, email2), // Nome: Luiza Drumond -> Chame sua função passando o nome Luiza Drumond como parâmetro, substituindo as aspas
+      id3: funcObj(name3, email3) // Nome: Carla Paiva -> Chame sua função passando o nome Carla Paiva como parâmetro, substituindo as aspas
     }
     return employees;
 };
@@ -46,4 +46,27 @@ prizaDraw(randomNumber, 1, 3);
 
     // Quando a resposta for correta a contagem sobe 1 ponto, quando for incorreta desce 0.5 pontos, e quando não houver resposta ("N.A") não altera-se a contagem.
 
-    
+const RIGHT_ANSWERS = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
+const STUDENT_ANSWERS = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
+
+
+const verificador = (resCorretas, resEstudante) => {
+    let resultado = 1;
+
+    for (let index = 0; index < resCorretas.length; index += 1) {
+        if (resCorretas[index] === resEstudante[index]) {
+            resultado += 1;
+        } else if (resEstudante === 'N.A'){
+            resultado += 0
+        } else {
+            resultado -= 0.5
+        } 
+    }
+    return resultado;
+}
+
+const final = (gabarito, resPessoa, func1) => {
+    return func1(gabarito, resPessoa);
+}
+
+console.log(final(RIGHT_ANSWERS, STUDENT_ANSWERS, verificador));
