@@ -49,17 +49,18 @@ console.log(numerosPares); // [6, 8, 10, 12];
 const [] = numerosPares;
 
 console.log(numerosPares);
-//-----------------------------------------------------
+// //-----------------------------------------------------
 
-// DEFAULT DESTRUCTURING
+// // DEFAULT DESTRUCTURING
 
-const getNationality = ({ firstName, nationality }) => `${firstName} is ${nationality}`;
+const getNationality = ({ firstName, nationality = 'Brazilian' }) => {
+    return `${firstName} is ${nationality}`;
+};
 
 const person = {
-  firstName: 'João',
-  lastName: 'Jr II',
+    firstName: 'João',
+    lastName: 'Jr II',
 };
-const { nationality = 'Brazilian' } = person;
 
 const otherPerson = {
   firstName: 'Ivan',
@@ -69,7 +70,7 @@ const otherPerson = {
 
 console.log(getNationality(otherPerson)); // Ivan is Russian
 console.log(getNationality(person));
-//-----------------------------------------------------
+// //-----------------------------------------------------
 
 // Object Property Shorthand
 
