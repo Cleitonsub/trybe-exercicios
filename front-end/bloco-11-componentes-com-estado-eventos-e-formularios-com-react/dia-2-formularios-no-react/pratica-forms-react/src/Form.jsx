@@ -43,12 +43,21 @@ class Form extends Component {
             value={this.state.idade}
             onChange={this.handleChange}
           />
-          <input
-            type="checkbox"
-            name="vaiComparecer"
-            value={this.state.vaiComparecer}
-            onChange={this.handleChange}
-          />
+          <fieldset>
+            <input
+              type="checkbox"
+              name="vaiComparecer"
+              value={this.state.vaiComparecer}
+              onChange={this.handleChange}
+              id="vaiComparecer"
+            />
+            <label htmlFor="vaiComparecer">Vai comparecer?</label>
+          </fieldset>
+          <fieldset>
+            <input
+              type="file" 
+            />
+          </fieldset>
         </form>
       </div>
     );
