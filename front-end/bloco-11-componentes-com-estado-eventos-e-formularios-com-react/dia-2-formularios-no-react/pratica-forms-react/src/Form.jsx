@@ -29,34 +29,32 @@ class Form extends Component {
       <div>
         <h1>Estados e React - Tecnologia fantástica ou reagindo a regionalismos?</h1>
         <form className="form">
-          <label>
-            Diga qual o seu Estado favorito! De React ou do Brasil, você decide! =)
-              <textarea
-              name="estadoFavorito"
-              value={this.state.estadoFavorito}
+          <fieldset>
+            <label className="labelText">
+              Diga qual o seu Estado favorito! De React ou do Brasil, você decide! =)
+                <textarea
+                name="estadoFavorito"
+                value={this.state.estadoFavorito}
+                onChange={this.handleChange}
+                />
+            </label>
+            <input
+              type="number"
+              name="idade"
+              value={this.state.idade}
               onChange={this.handleChange}
+            />
+              <input
+                type="checkbox"
+                name="vaiComparecer"
+                value={this.state.vaiComparecer}
+                onChange={this.handleChange}
+                id="vaiComparecer"
               />
-          </label>
-          <input
-            type="number"
-            name="idade"
-            value={this.state.idade}
-            onChange={this.handleChange}
-          />
-          <fieldset>
-            <input
-              type="checkbox"
-              name="vaiComparecer"
-              value={this.state.vaiComparecer}
-              onChange={this.handleChange}
-              id="vaiComparecer"
-            />
-            <label htmlFor="vaiComparecer">Vai comparecer?</label>
-          </fieldset>
-          <fieldset>
-            <input
-              type="file" 
-            />
+              <label htmlFor="vaiComparecer">Vai comparecer?</label>
+              <input
+                type="file" 
+              />
           </fieldset>
         </form>
       </div>
