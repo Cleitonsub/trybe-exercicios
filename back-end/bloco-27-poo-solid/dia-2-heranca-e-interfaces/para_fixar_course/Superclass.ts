@@ -15,3 +15,7 @@ class Subclass extends Superclass {
   };
 
 }
+
+const quest = new Subclass(false);
+
+quest.sayHello();
