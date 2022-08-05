@@ -1,13 +1,5 @@
 import fs from 'fs/promises';
-
-interface IPlant {
-  id: string,
-  breed: string,
-  needsSun: boolean,
-  origin: string,
-  size: number,
-  specialCare?: { waterFrequency: number }
-}
+import { IPlant } from './models/entities/IPlant';
 
 interface IOpsInfo { createdPlants: number }
 
