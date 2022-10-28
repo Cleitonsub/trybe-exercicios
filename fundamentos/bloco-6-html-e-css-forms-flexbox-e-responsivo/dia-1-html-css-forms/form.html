@@ -1,0 +1,92 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Treinando criar um formulário</h1>
+    <form action="">
+        <div>
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <label for="name">Nome completo</label>
+                <input type="text" id="name" name="Nome" maxlength="40" placeholder="Nome completo" required>
+
+                <label for="email">Email mais utilizado</label>
+                <input type="text" id="email" name="email" maxlength="50" placeholder="Email" required>
+
+                <label for="cpf">CPF</label>
+                <input type="text" id="cpf" name="cpf" maxlength="11" placeholder="CPF" required>
+
+                <label for="endereco">Endereço</label>
+                <input type="text" id="endereco" name="endereco" maxlength="200" placeholder="Endereço" required>
+
+                <label for="cidade">Cidade</label>
+                <input type="text" id="cidade" name="cidade" maxlength="28" placeholder="Cidade" required>
+
+                <label for="estados">Estado</label>
+                <select name="estado" id="estados">
+                    <option value="-"></option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+
+                    <input type="radio" id="tipo-casa1" name="casa">
+                    <label for="tipo-casa1">Casa</label>
+
+                    <input type="radio" id="tipo-casa2" name="casa">
+                    <label for="tipo-casa2">Apartamento</label>
+
+                    <button type="reset">Apagar dados pessoais</button>
+            </fieldset>
+<br>
+            <fieldset>
+                <legend>Dados do seu último emprego</legend>
+                <textarea name="res-curriculo" id="res-curriculo" cols="65" rows="16" maxlength="1000" required></textarea>
+
+                <label for="cargo">Cargo</label>
+                <input type="text" name="cargo" id="cargo" placeholder="Cargo" maxlength="40">
+
+                <label for="des-cargo">Descrição do cargo</label>
+                <input type="text" name="des-cargo" id="des-cargo" placeholder="Descrição do cargo" maxlength="500" required>
+
+                <label for="data-inicio">Data de início</label>
+                <input type="date" id="data-inicio" max="2099" required>
+
+
+
+
+            </fieldset>
+
+        </div>
+
+    </form>
+</body>
+</html>
