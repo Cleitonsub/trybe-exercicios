@@ -1,0 +1,59 @@
+body {
+    font-size: larger;
+    margin: 2% 5%;
+}
+h1 {
+    font-size: large;
+}
+h2 {
+
+}
+
+img {
+    max-width: 100%;
+    margin: 20px 0;
+}
+
+figure {
+    margin: 0;
+}
+
+@media screen and (min-width: 500px) {
+    body {
+        background-color: purple;
+        font-size: medium;
+        margin: 5% 15%;
+        max-width: 650px;
+    }
+
+    .columns {
+        display: flex;
+    }
+
+    img {
+        max-width: 100%;
+        margin: 10px 5px;
+    }
+
+    figure {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        background-color: seagreen;
+        font-size: large;
+        margin: 5% 20%;
+        max-width: 720px;
+    }
+
+
+
+
+
+
+
+
+}
