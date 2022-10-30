@@ -1,0 +1,13 @@
+{
+  "name": "exec-22.2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "exec.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "exec": "node exec.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
