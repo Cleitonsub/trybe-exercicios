@@ -3,12 +3,27 @@ import { IPlant } from './models/entities/IPlant';
 
 interface IOpsInfo { createdPlants: number }
 
-class Plants {
+class Plants implements IPlant {
   private readonly plantsFile = 'plantsData.json';
   private readonly opsFile = 'opsInfo.json';
+  public id: string;
+  public breed: string;
+  public needsSun: boolean;
+  public origin: string;
+  public size: number;
+  public specialCare?: { waterFrequency: number }
+
+  constructor() {
+    this.id = "";
+    this.breed = "";
+    this.needsSun = true;
+    this.origin = "";
+    this.size = 0;
+    this.specialCare = { waterFrequency: number }
+  }
 
   public initPlant(plant: IPlant): IPlant {
-    const { id, breed, needsSun, origin, specialCare, size } = plant;
+    const { id, breed, needsSun, origin, specialCare, size } = this.plant;
     const waterFrequency = needsSun
       ? size * 0.77 + (origin === 'Brazil' ? 8 : 7)
       : (size / 2) * 1.33 + (origin === 'Brazil' ? 8 : 7);
