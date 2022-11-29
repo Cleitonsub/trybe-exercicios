@@ -10,4 +10,4 @@ min_rating = 3.0
 for restaurant in restaurants:
     if restaurant["nota"] > min_rating:
         filtered_restaurants.append(restaurant)
-print(filtered_restaurants)
+print(filtered_restaurants) # imprime a lista de restaurantes, sem o B e D
