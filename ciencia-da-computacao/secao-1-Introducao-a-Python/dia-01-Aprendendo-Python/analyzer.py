@@ -1,6 +1,6 @@
 def analyze(text):
   # ... = cria função sem desenvolver
-  # 
+  # contagens de palavras e caracteres
   count_words = len(text.split(" "))
   count_letters = len(text)
 
