@@ -35,13 +35,13 @@ def orders():
 
 # estamos adicionando a fixture "orders" ao teste
 # ou seja, temos um contexto onde os pedidos são os definidos anteriormente
-def test_get_most_ordered_dish_per_costumer_when_customer_is_maria(orders):
-    assert get_most_ordered_dish_per_costumer(orders, "maria") == "pizza"
+# def test_get_most_ordered_dish_per_costumer_when_customer_is_maria(orders):
+    # assert get_most_ordered_dish_per_costumer(orders, "maria") == "pizza"
 
 # novamente adicionamos um cenário (contexto) ao teste onde os pedidos realizados são os
 # definidos na fixture
-def test_get_order_frequency_per_costumer_when_customer_is_joao_and_order_is_pizza(orders):
-    assert get_order_frequency_per_costumer(orders, "joao", "pizza") == 0
+# def test_get_order_frequency_per_costumer_when_customer_is_joao_and_order_is_pizza(orders):
+    # assert get_order_frequency_per_costumer(orders, "joao", "pizza") == 0
 
-def test_get_order_frequency_per_costumer_when_customer_is_maria_and_order_is_hamburger(orders):
-    assert get_order_frequency_per_costumer(orders, "maria", "hamburger") == 1
+# def test_get_order_frequency_per_costumer_when_customer_is_maria_and_order_is_hamburger(orders):
+    # assert get_order_frequency_per_costumer(orders, "maria", "hamburger") == 1
